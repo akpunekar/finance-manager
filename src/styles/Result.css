@@ -1,0 +1,57 @@
+.result {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px 16px;
+  width: auto;
+  margin: 5px 16px;
+  float: left;
+}
+.result h1,
+.result h2,
+.result h3,
+.result h4,
+.result h5 {
+  margin-bottom: 7px;
+}
+.result p {
+  font-size: 1.1em;
+  margin-bottom: 2px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+hr {
+  border: 0;
+  height: 10px;
+  box-shadow: 0 0 10px 1px black;
+}
+
+button {
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 5%;
+  width: 150px;
+  height: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.fa-envelope {
+  text-decoration: none;
+  color: #f5ba13;
+}
+.fa-envelope:hover {
+  color: #ad830e;
+}
+
+@media print {
+  @page {
+    size: A4; /* DIN A4 standard, Europe */
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=Result.css.map */

@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Result from "./components/Result";
+import Form from "./components/Form";
 
 function App() {
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
+  const [income, setIncome] = useState("");
+  const [email, setEmail] = useState("");
+  const [member, setMember] = useState("");
+  const [isClicked, setClicked] = useState("");
+
+  function calcForm(name, age, income, email, member) {
+    setName(name);
+    setAge(age);
+    setIncome(income);
+    setEmail(email);
+    setMember(member);
+  }
+
+  function buttonClicked(isClicked) {
+    setClicked(isClicked);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Form clicked={buttonClicked} onCalc={calcForm} />
+      <Result
+        isClicked={isClicked}
+        name={name}
+        age={age}
+        income={income}
+        email={email}
+        member={member}
+      />
+      <Footer />
     </div>
   );
 }

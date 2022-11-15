@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.App {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #f5ba13;
+  padding: 10px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: "WaltographRegular";
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (width< 500px) {
+  header h1 {
+    font-size: 40px;
+  }
+}
+
+@media (width < 370px) {
+  header h1 {
+    font-size: 30px;
+  }
+}
+
+@media (width < 290px) {
+  header h1 {
+    font-size: 23px;
+  }
+}

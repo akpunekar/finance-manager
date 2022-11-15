@@ -1,0 +1,10 @@
+footer {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+footer p {
+  color: rgb(189, 187, 187);
+}/*# sourceMappingURL=Footer.css.map */
